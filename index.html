@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	
+	<title>Partum</title>
+
+	<link rel="shortcut icon" href="img/favicon.ico">
+	
+	<!-- Bootstrap itself -->
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="css/magister.css">
+
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<!-- Fonts -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<!-- WebGl -->
+	<link href="https://fonts.googleapis.com/css?family=Barlow:400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo4.css" />
+	<link rel="stylesheet" type="text/css" href="pater/pater.css" />
+	<!-- ICONS -->
+	<link href="css/socicon.css" rel="stylesheet" type="text/css" media="all">
+	<!-- HOLE -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+	<style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+
+.hole {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+}
+
+i {
+  display: block;
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  left: -70px;
+  top: -70px;
+  border-radius: 140px;
+  opacity: 0;
+  animation-name: scale;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+i:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+i:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+i:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+i:nth-child(4) {
+  animation-delay: 1.2s;
+}
+
+i:nth-child(5) {
+  animation-delay: 1.5s;
+}
+
+i:nth-child(6) {
+  animation-delay: 1.8s;
+}
+
+i:nth-child(7) {
+  animation-delay: 2.1s;
+}
+
+i:nth-child(8) {
+  animation-delay: 2.4s;
+}
+
+i:nth-child(9) {
+  animation-delay: 2.7s;
+}
+
+i:nth-child(10) {
+  animation-delay: 3s;
+}
+i:nth-child(11) {
+  animation-delay: 3.3s;
+}
+i:nth-child(12) {
+  animation-delay: 3.6s;
+}
+i:nth-child(13) {
+  animation-delay: 3.9s;
+}
+i:nth-child(14) {
+  animation-delay: 4.2s;
+}
+i:nth-child(15) {
+  animation-delay: 4.5s;
+}
+i:nth-child(16) {
+  animation-delay: 4.8s;
+}
+i:nth-child(17) {
+  animation-delay: 5.1s;
+}
+i:nth-child(18) {
+  animation-delay: 5.4s;
+}
+i:nth-child(19) {
+  animation-delay: 5.7s;
+}
+i:nth-child(20) {
+  animation-delay: 6.0s;
+}
+i:nth-child(21) {
+  animation-delay: 6.3s;
+}
+i:nth-child(22) {
+  animation-delay: 6.6s;
+}
+i:nth-child(23) {
+  animation-delay: 6.9s;
+}
+i:nth-child(24) {
+  animation-delay: 7.2s;
+}
+i:nth-child(25) {
+  animation-delay: 7.5s;
+}
+i:nth-child(26) {
+  animation-delay: 7.8s;
+}
+i:nth-child(27) {
+  animation-delay: 8.1s;
+}
+i:nth-child(28) {
+  animation-delay: 8.4s;
+}
+i:nth-child(29) {
+  animation-delay: 8.7s;
+}
+i:nth-child(30) {
+  animation-delay: 9.0s;
+}
+@keyframes scale {
+  0% {
+    transform: scale(2);
+    opacity: 0;
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    transform: scale(1) translate(0px, -5px);
+    opacity: 1;
+    box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    transform: scale(0.1) translate(0px, 5px);
+    opacity: 0;
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0);
+  }
+}
+
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<!-- use "theme-invert" class on bright backgrounds, also try "text-shadows" class -->
+<body>
+
+<nav class="mainmenu">
+	<div class="container">
+		<div class="dropdown">
+			<button type="button" class="navbar-toggle" data-toggle="dropdown"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			<!-- <a data-toggle="dropdown" href="#">Dropdown trigger</a> -->
+			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+				<li><a href="#head" class="active">Home</a></li>
+				<li><a href="#about">About Partum</a></li>
+				<li><a href="#themes">UMI</a></li>
+				<li><a href="#contact">Partum Farms</a></li>
+			</ul>
+			<img src="img/partum.png" class="logo">
+		</div>
+	</div>
+</nav>
+
+
+<!-- Main (Home) section -->
+<section class="section" id="head" style="padding:0px;">
+	<div class="container" style="padding-top: 2%;">
+
+		<div class="row">
+			<div class="col-md-12 col-lg-12 col-md-offset-1 col-lg-offset-1 text-center" style="margin-left: 0px">	
+
+				<main>
+					<div class="content">
+						<canvas class="scene scene--full" id="scene"></canvas>
+						<div class="content__inner" style="color: #f4f4f4;">
+							<h2 class="content__title">PARTUM</h2>
+							<h3 class="content__subtitle">A Nikoin Mining Operation</h2>
+						</div>
+					</div>
+				</main>
+				<footer>
+					<div style="height: 20px;margin-top: -4%; margin-left: 15%;" class="col-sm-8">
+						<a href="https://www.facebook.com/teamnikoin" target="_blank"><img height="100%" class="socicons" src="img/twitter.png"></a>
+						<a href="https://www.facebook.com/teamnikoin" target="_blank"><img height="100%" class="socicons" src="img/facebook.png"></a>
+						<a href="https://www.facebook.com/teamnikoin" target="_blank"><img height="100%" class="socicons"  src="img/instagram.png"></a>
+						<a href="https://www.facebook.com/teamnikoin" target="_blank"><img height="100%" class="socicons" src="img/medium.png"></a>
+						<a href="https://www.facebook.com/teamnikoin" target="_blank"><img height="100%" class="socicons" src="img/telegram.png"></a>
+						<a href="https://www.facebook.com/teamnikoin" target="_blank"><img height="100%" class="socicons" src="img/slack.png"></a>
+						<a href="https://www.facebook.com/teamnikoin" target="_blank"><img height="100%" class="socicons" src="img/bitcoin.png"></a>
+					</div>
+
+				</footer>
+			
+				
+			</div> <!-- /col -->
+		</div> <!-- /row -->
+	
+	</div>
+</section>
+
+<!-- Second (About) section -->
+<section class="section" id="about">
+	<div class="container" style="background: url(img/miningFarm.png) no-repeat; background-size:cover;">
+	
+		<h2 class="text-center title">About Partum</h2>
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-2 envelope">    
+				<p class="p">Partum is the Proprietary Nikoin Mining Operation. It constitutes of state-of-art mining farm, capable of mining multitude of cryptoassets and a proprietary algorithm for switching between cryptoassets depending on the profitability.</p>    
+				<p class="p">We are convinced that the global community deserves a share in the profits of cryptocurrency mining and not just a handful of anonymous players from oligopolistic cartels in authoritarian states. We believe that crypto mining has to be a decentralized, democratic, and evenly distributed operation - one that is open to everyone who is willing to support the network and benefit from supporting it.</p>    
+			</div>
+		</div>
+	</div>
+		<footer>
+			<div class="col-lg-12 footerdiv">
+				<a href="https://www.facebook.com/teamnikoin" target="_blank"><img height="100%" class="socicons" src="img/twitter.png"></a>
+				<a href="https://www.facebook.com/teamnikoin" target="_blank"><img height="100%" class="socicons" src="img/facebook.png"></a>
+				<a href="https://www.facebook.com/teamnikoin" target="_blank"><img height="100%" class="socicons"  src="img/instagram.png"></a>
+				<a href="https://www.facebook.com/teamnikoin" target="_blank"><img height="100%" class="socicons" src="img/medium.png"></a>
+				<a href="https://www.facebook.com/teamnikoin" target="_blank"><img height="100%" class="socicons" src="img/telegram.png"></a>
+				<a href="https://www.facebook.com/teamnikoin" target="_blank"><img height="100%" class="socicons" src="img/slack.png"></a>
+				<a href="https://www.facebook.com/teamnikoin" target="_blank"><img height="100%" class="socicons" src="img/bitcoin.png"></a>
+			</div>
+		</footer>
+	
+</section>
+
+<!-- Third (Works) section -->
+<section class="section" id="themes">
+	  <div class='hole'>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+    <i></i>
+  
+</div>
+	<div class="container background">
+			<h2 class="text-center title">UMI</h2>
+			<div class="row">
+			<div class="envelope col-md-12" style="display: inline-block; margin: 0px;">    
+				<p style="text-align: center ;font-size: 150%; padding-left: 10px;padding-right: 10px;">Partum’s central hub or Unified Mining Interface (UMI) manages the automated, decentralized operation of mining farms worldwide. It supports the Mining Farms in finding the optimal mining strategy depending on the traded price of the cryptocurrency, mining difficulty, real-time energy price at the location, hardware generation and many more factors. Besides data aggregation, control and optimization of Mining Farms, UMI also handles and supervises all service & maintenance operations throughout the Nikoin network.</p>  
+				<p><a href="#" class="btn btn-default" style="margin-left: 45%; margin-top: 5%" role="button">View Demo</a></p>  
+			</div>
+
+		</div>
+	</div>
+		<footer>
+			<div class="col-lg-12 footerdiv">
+				<a href="https://www.facebook.com/teamnikoin" target="_blank"><img height="100%" class="socicons" src="img/twitter.png"></a>
+				<a href="https://www.facebook.com/teamnikoin" target="_blank"><img height="100%" class="socicons" src="img/facebook.png"></a>
+				<a href="https://www.facebook.com/teamnikoin" target="_blank"><img height="100%" class="socicons"  src="img/instagram.png"></a>
+				<a href="https://www.facebook.com/teamnikoin" target="_blank"><img height="100%" class="socicons" src="img/medium.png"></a>
+				<a href="https://www.facebook.com/teamnikoin" target="_blank"><img height="100%" class="socicons" src="img/telegram.png"></a>
+				<a href="https://www.facebook.com/teamnikoin" target="_blank"><img height="100%" class="socicons" src="img/slack.png"></a>
+				<a href="https://www.facebook.com/teamnikoin" target="_blank"><img height="100%" class="socicons" src="img/bitcoin.png"></a>
+			</div>
+		</footer>
+</section>
+
+<!-- Fourth (Contact) section -->
+<section class="section" id="contact">
+	<div class="container background">
+	
+		<h2 class="text-center title">Partum Farms</h2>
+		<div class="row">
+			<div class="envelope col-md-12" style="display: inline-block; margin: 0px;">    
+				<p style="text-align: center ;font-size: 150%; padding-left: 10px;padding-right: 10px;">Nikoin will be deploying fully customised “Industry 4.0”, remotely monitored, Internet of Things enabled mining farms in Himalayan Hilltowns, in Uttarakhand, India. The Himalayas have an undisrupted and reasonably cheap power supply, good internet connection, low air pollution, and low temperature around the year.Mining requires a temperature controlled environment with low dust and particulate matter in the air for better performance. We will be deploying a total of 4,200 GPUs with a cumulative hash power of 105,000 Mh/s in Phase I.</p>  
+				<p><a href="#" class="btn btn-default" style="margin-left: 45%; margin-top: 5%" role="button">Invest Now</a></p>  
+			</div>
+
+		</div>
+	</div>
+		<footer>
+			<div class="col-lg-12 footerdiv">
+				<a href="https://www.facebook.com/teamnikoin" target="_blank"><img height="100%" class="socicons" src="img/twitter.png"></a>
+				<a href="https://www.facebook.com/teamnikoin" target="_blank"><img height="100%" class="socicons" src="img/facebook.png"></a>
+				<a href="https://www.facebook.com/teamnikoin" target="_blank"><img height="100%" class="socicons"  src="img/instagram.png"></a>
+				<a href="https://www.facebook.com/teamnikoin" target="_blank"><img height="100%" class="socicons" src="img/medium.png"></a>
+				<a href="https://www.facebook.com/teamnikoin" target="_blank"><img height="100%" class="socicons" src="img/telegram.png"></a>
+				<a href="https://www.facebook.com/teamnikoin" target="_blank"><img height="100%" class="socicons" src="img/slack.png"></a>
+				<a href="https://www.facebook.com/teamnikoin" target="_blank"><img height="100%" class="socicons" src="img/bitcoin.png"></a>
+			</div>
+		</footer>
+</section>
+
+
+<!-- Load js libs only when the page is loaded. -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="js/modernizr.custom.72241.js"></script>
+<!-- Custom template scripts -->
+<script src="js/magister.js"></script>
+<!-- WebGl -->
+<script src="js/demo.js"></script>
+<script src="js/three.min.js"></script>
+<script src="js/perlin.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/demo4.js"></script>
+<!-- HOLE -->
+<script  src="js/index.js"></script>
+</body>
+</html>
