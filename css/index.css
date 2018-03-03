@@ -1,45 +1,99 @@
-.socicons
-{
-	margin-left: 3%;
-	filter: grayscale(100%);
-	-webkit-filter: grayscale(100%);
+/*Common CSS*/
+	.socicons
+	{
+		margin-left: 3%;
+		filter: grayscale(100%);
+		-webkit-filter: grayscale(100%);
+	}
+	.socicons:hover
+	{
+	filter: grayscale(0%);
+	}
+	.logo
+	{
+		width: 7%;
+		float: right;
+	}
+	.row
+	{
+		position: relative;
+		padding-bottom: 0px;
+	}
+	.screen
+	{
+		width: 100%; 
+		height: 70vh
+	}
+/*Large screen*/
+@media only screen
+and (min-width : 1824px){
+
+	.p
+	{
+		font-size: 150%; 
+		text-align: center;
+	}
+	.footerdiv
+	{
+		height: 20px; 
+		position:absolute;
+		bottom:0; 
+		margin-top: -1%; 
+		width: 70vw;
+		margin-left: 22%;
+	}
+	.envelope
+	{
+		color:#fff; 
+		margin-top: 24%;
+/*		background: url(../img/miningfarm.png) no-repeat;
+*/		background-size: cover;
+	}
 }
-.socicons:hover
+/*Laptop*/
+@media only screen
+and (min-width : 1224px)
 {
-filter: grayscale(0%);
+	.p
+	{
+		font-size: 150%; 
+		text-align: center;
+	}
+	.footerdiv
+	{
+		height: 20px; 
+		position:absolute;
+		bottom:0; 
+		margin-top: -1%; 
+		width: 70vw;
+		margin-left: 32%;
+	}
+	.envelope
+	{
+		color:#fff; 
+		margin-top: 18%;
+/*		background: url(../img/miningfarm.png) no-repeat;
+*/		background-size: cover;
+	}
 }
-.logo
-{
-	width: 7%;
-	float: right;
-}
-.p
-{
-	font-size: 150%; 
-	text-align: center;
-}
-.footerdiv
-{
-	height: 20px; 
-	margin-left: 35%; 
-	position:absolute;
-	bottom:0; 
-	margin-top: -1%; 
-	width: 80%;
-}
-.envelope
-{
-	color:#fff; margin-left: 10%;
-}
+/*Mobile view*/
 @media only screen and (max-width: 500px) {
 	.logo
 	{
 		margin-top: 3%;
 		width: 15%;
 	}
+	.p
+	{
+		font-size: 150%; 
+		text-align: center;
+	}
 	.envelope
 	{
-		color:#fff;
+		color:#fff; 
+		margin-top: 2%;
+/*		background: url(../img/miningfarm.png) no-repeat;
+*/		background-size: cover;
 	}
 	.footerdiv
 	{
@@ -48,6 +102,45 @@ filter: grayscale(0%);
 		position:relative;
 		bottom: 0;
 	}
+	.screen
+	{
+		width: 100%; 
+		height: 100vh;
+	}
 
+}
+/*IPad view*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) 
+{
+
+	.p
+	{
+		font-size: 150%; 
+		text-align: center;
+	}
+	.footerdiv
+	{
+		height: 20px; 
+		position:absolute;
+		bottom:0; 
+		margin-top: -1%; 
+		width: 70vw;
+		margin-left: 30%;
+	}
+	.envelope
+	{
+		color:#fff; 
+		margin-top: 25%;
+/*		background: url(../img/miningfarm.png) no-repeat;
+*/		background-size: cover;
+	}
+	.screen
+	{
+		width: 100%; 
+		height: 70vh;
+	}
 }
 
