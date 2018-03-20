@@ -46,8 +46,6 @@ and (min-width : 1824px){
 	{
 		color:#fff; 
 		margin-top: 24%;
-/*		background: url(../img/miningfarm.png) no-repeat;
-*/		background-size: cover;
 	}
 }
 /*Laptop*/
@@ -71,9 +69,7 @@ and (min-width : 1224px)
 	.envelope
 	{
 		color:#fff; 
-		margin-top: 18%;
-/*		background: url(../img/miningfarm.png) no-repeat;
-*/		background-size: cover;
+		margin-top: 9%;
 	}
 }
 /*Mobile view*/
