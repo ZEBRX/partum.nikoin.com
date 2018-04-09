@@ -1,7 +1,14 @@
-/*Common CSS*/
+
+/*Large Screen CSS*/
+	body
+	{
+		overflow: none;
+	}
 	.socicons
 	{
 		margin-left: 3%;
+		width: 18px;
+		height: 18px;
 		filter: grayscale(100%);
 		-webkit-filter: grayscale(100%);
 	}
@@ -24,119 +31,131 @@
 		width: 100%; 
 		height: 70vh
 	}
-/*Large screen*/
-@media only screen
-and (min-width : 1824px){
-
-	.p
+	section
 	{
-		font-size: 150%; 
-		text-align: center;
+		width: 100vw;
+		height: 100vh;
+		padding: 5%;
+	}
+	p
+	{
+		color:#fdf9f5;
+		font-size: 120%;
+    	text-align: justify;
+	}
+	.visible
+	{
+	    width: 75%;
+    	margin-left: 12.5%;
+    	font-size: 100%;
+    	height: 70vh;
 	}
 	.footerdiv
 	{
-		height: 20px; 
-		position:absolute;
-		bottom:0; 
-		margin-top: -1%; 
-		width: 70vw;
-		margin-left: 22%;
+		 vertical-align: bottom;
+		 margin-left: 35%;
 	}
-	.envelope
+	.footerdiv1
 	{
-		color:#fff; 
-		margin-top: 24%;
+		 vertical-align: bottom;
+		 margin-left: 35%;
 	}
-}
-/*Laptop*/
-@media only screen
-and (min-width : 1224px)
+	.containers
+	{
+		margin-top: 15vh;
+	}
+	.nikoin
+	{
+		width: 20%;
+	}
+	.partum_btn
+	{
+		margin-left: 45%; margin-top: 5%
+	}
+/*Portrait Screem*/
+@media only screen and (min-device-width: 320px) and (min-device-height : 568px) and (orientation: portrait) 
 {
-	.p
+	body
 	{
-		font-size: 150%; 
-		text-align: center;
+		overflow: unset;
 	}
-	.footerdiv
-	{
-		height: 20px; 
-		position:absolute;
-		bottom:0; 
-		margin-top: -1%; 
-		width: 70vw;
-		margin-left: 32%;
-	}
-	.envelope
-	{
-		color:#fff; 
-		margin-top: 9%;
-	}
-}
-/*Mobile view*/
-@media only screen and (max-width: 500px) {
 	.logo
 	{
-		margin-top: 3%;
-		width: 15%;
-	}
-	.p
-	{
-		font-size: 150%; 
-		text-align: center;
-	}
-	.envelope
-	{
-		color:#fff; 
+		width: 16%;
+		float: right;
 		margin-top: 2%;
-/*		background: url(../img/miningfarm.png) no-repeat;
-*/		background-size: cover;
+	}
+	.mainmenu {
+    z-index: 999999;
+    width: 100%;
+    padding: 15px 0 0 0;
+    height: 10vh;
+	}
+	canvas
+	{
+		height: 90vh;
 	}
 	.footerdiv
 	{
-		height: 20px;
-		margin-left: 23%;
-		position:relative;
-		bottom: 0;
+		 vertical-align: bottom;
+		 margin-left: 0px;
+		 margin-top: 4%;
+		 width: 100%;
 	}
-	.screen
+	.footerdiv1
 	{
-		width: 100%; 
-		height: 100vh;
+		 vertical-align: bottom;
+		 margin-left: 0px;
+		 width: 100%;
 	}
-
+	.containers
+	{
+		margin-top: 0px;
+	}
+	.nikoin
+	{
+		width: 45%;
+    	margin-left: 20%;
+    	margin-top: 5%;
+	}
+	.nikoin1
+	{
+		width: 43%;
+    	margin-left: 8%;
+    	margin-top: 2%;
+	}
+	.socicons
+	{
+		margin-left: 7%;
+		width: 18px;
+		height: 18px;
+		filter: grayscale(100%);
+		-webkit-filter: grayscale(100%);
+	}
+	.socicons:hover
+	{
+	filter: grayscale(0%);
+	}
+	.partum_btn
+	{
+		margin-left: 35%;
+		margin-top: 5%
+	}
+	.visible
+	{
+		height: auto;
+	}
+	.title
+	{
+		font-size: 3em;
+	}
 }
-/*IPad view*/
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : portrait) 
+/*@media only screen and (max-device-width: 1024px)  and (max-device-height : 1366px) and (orientation: portrait) 
 {
-
-	.p
+	.logo
 	{
-		font-size: 150%; 
-		text-align: center;
+		width: 10%;
+		float: right;
+		margin-top: 1%
 	}
-	.footerdiv
-	{
-		height: 20px; 
-		position:absolute;
-		bottom:0; 
-		margin-top: -1%; 
-		width: 70vw;
-		margin-left: 30%;
-	}
-	.envelope
-	{
-		color:#fff; 
-		margin-top: 25%;
-/*		background: url(../img/miningfarm.png) no-repeat;
-*/		background-size: cover;
-	}
-	.screen
-	{
-		width: 100%; 
-		height: 70vh;
-	}
-}
-
+}*/

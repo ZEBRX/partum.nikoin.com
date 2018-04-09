@@ -19,6 +19,9 @@ body {
 	background-color: var(--color-bg);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
 }
 
 /* Fade effect */
@@ -86,7 +89,7 @@ main {
 	align-items: center;
 	align-content: center;
 	margin: 0 auto;
-	min-height: 100vh;
+	min-height: 89vh;
 }
 
 .content--fixed {
@@ -279,9 +282,9 @@ a.demo--current {
 		display: block;
 		padding: 0.85em;
 	}
-	.content:not(.content--fixed) {
+	/*.content:not(.content--fixed) {
 		margin-bottom: 6em;
-	}
+	}*/
 	.codrops-header {
 		flex-direction: column;
 		align-items: center;

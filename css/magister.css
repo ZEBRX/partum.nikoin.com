@@ -24,7 +24,7 @@ body {
 /********************************************************/
 /*                    Navigation bar                    */
 /********************************************************/
-.mainmenu { z-index: 999999; width:100%;  padding: 30px 0 0 0;}
+.mainmenu { z-index: 999999; width:100%;  padding: 30px 0 0 0; height: 15vh;}
 @media (min-width: 768px) {
 	.mainmenu { position: fixed; }
 }
@@ -108,16 +108,15 @@ body {
 	z-index: 1;
 	min-height:420px;
 	width: 100%; 
-	overflow:auto;
-	height:100%;
-	padding-top:100px;
-/*	padding-bottom:50px; 
-*/	display:none;
-	top:0;
+	overflow:hidden;
+	height:100%;/*
+	padding-top:100px;*/
+	padding-bottom:0px; 
+
 } 
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
 	.section { padding-top:160px;}
-}
+}*/
 
 /* Show one of sections */
 #head { 
