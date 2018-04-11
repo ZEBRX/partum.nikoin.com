@@ -54,7 +54,7 @@
 	{
 		 vertical-align: bottom;
 		 margin-left: 35%;
-		margin-top : -0.5%;
+		margin-top : -1.5%;
 	}
 	.footerdiv1
 	{
@@ -72,6 +72,14 @@
 	.partum_btn
 	{
 		margin-left: 45%; margin-top: 5%
+	}
+	.nikoin
+	{
+		margin-top: -1%;
+	}
+	.nikoin1
+	{
+    	margin-top: -1%;
 	}
 /*Portrait Screem*/
 @media only screen and (min-device-width: 320px) and (min-device-height : 568px) and (orientation: portrait) 
